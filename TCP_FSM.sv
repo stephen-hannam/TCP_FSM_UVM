@@ -1,4 +1,4 @@
-// Created by fizzgen version 5.20 on 2020:01:11 at 19:48:58 (www.fizzim.com)
+// Created by fizzgen version 5.20 on 2020:01:12 at 06:33:20 (www.fizzim.com)
 
 module TCP (
   output logic ACK_o,
@@ -19,18 +19,32 @@ module TCP (
 );
 
   // state bits
-  enum logic [7:0] {
-    CLOSED      = 8'b00000000, // extra=0000 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    CLOSE_WAIT  = 8'b00010000, // extra=0001 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    CLOSING     = 8'b00100000, // extra=0010 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    ESTABLISHED = 8'b00110000, // extra=0011 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    FIN_WAIT_1  = 8'b01000000, // extra=0100 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    FIN_WAIT_2  = 8'b01010000, // extra=0101 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    LAST_ACK    = 8'b01100000, // extra=0110 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    LISTEN      = 8'b01110000, // extra=0111 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    SYN_RCVD    = 8'b10000000, // extra=1000 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    SYN_SENT    = 8'b10010000, // extra=1001 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
-    TIME_WAIT   = 8'b10100000, // extra=1010 SYN_o=0 RST_o=0 FIN_o=0 ACK_o=0 
+  enum {
+    CLOSED_BIT,
+    CLOSE_WAIT_BIT,
+    CLOSING_BIT,
+    ESTABLISHED_BIT,
+    FIN_WAIT_1_BIT,
+    FIN_WAIT_2_BIT,
+    LAST_ACK_BIT,
+    LISTEN_BIT,
+    SYN_RCVD_BIT,
+    SYN_SENT_BIT,
+    TIME_WAIT_BIT
+  } index;
+
+  enum logic [10:0] {
+    CLOSED      = 11'b1<<CLOSED_BIT,
+    CLOSE_WAIT  = 11'b1<<CLOSE_WAIT_BIT,
+    CLOSING     = 11'b1<<CLOSING_BIT,
+    ESTABLISHED = 11'b1<<ESTABLISHED_BIT,
+    FIN_WAIT_1  = 11'b1<<FIN_WAIT_1_BIT,
+    FIN_WAIT_2  = 11'b1<<FIN_WAIT_2_BIT,
+    LAST_ACK    = 11'b1<<LAST_ACK_BIT,
+    LISTEN      = 11'b1<<LISTEN_BIT,
+    SYN_RCVD    = 11'b1<<SYN_RCVD_BIT,
+    SYN_SENT    = 11'b1<<SYN_SENT_BIT,
+    TIME_WAIT   = 11'b1<<TIME_WAIT_BIT,
     XXX = 'x
   } state, nextstate;
 
@@ -38,40 +52,95 @@ module TCP (
   // comb always block
   always_comb begin
     nextstate = XXX; // default to x because default_state_is_x is set
-    case (state)
-      CLOSED     : if      (a_opn)               nextstate = SYN_SENT;
-                   else if (p_opn)               nextstate = LISTEN;
-                   else                          nextstate = CLOSED;
-      CLOSE_WAIT : if      (cls)                 nextstate = LAST_ACK;
-      CLOSING    : if      (ACK_i)               nextstate = TIME_WAIT;
-      ESTABLISHED: if      (cls)                 nextstate = FIN_WAIT_1;
-                   else if (FIN_i)               nextstate = CLOSE_WAIT;
-                   else if (RST_i)               nextstate = LISTEN;
-                   else if (ACK_i)               nextstate = ESTABLISHED;
-      FIN_WAIT_1 : if      (FIN_i && ACK_i)      nextstate = TIME_WAIT;
-                   else if (FIN_i)               nextstate = CLOSING;
-                   else if (ACK_i)               nextstate = FIN_WAIT_2;
-      FIN_WAIT_2 : if      (FIN_i)               nextstate = TIME_WAIT;
-      LAST_ACK   : if      (ACK_i || timo_strb)  nextstate = CLOSED;
-      LISTEN     : if      (send_data)           nextstate = SYN_SENT;
-                   else if (SYN_i)               nextstate = SYN_RCVD;
-                   else if (cls)                 nextstate = CLOSED;
-      SYN_RCVD   : if      (cls)                 nextstate = FIN_WAIT_1;
-                   else if (timo_strb)           nextstate = CLOSED;
-                   else if (ACK_i)               nextstate = ESTABLISHED;
-                   else if (RST_i)               nextstate = LISTEN;
-      SYN_SENT   : if      (cls || timo_strb)    nextstate = CLOSED;
-                   else if (SYN_i && ACK_i)      nextstate = ESTABLISHED;
-                   else if (SYN_i)               nextstate = SYN_RCVD;
-      TIME_WAIT  : if      (timo_strb)           nextstate = CLOSED;
+    ACK_o = 0; // default
+    FIN_o = 0; // default
+    RST_o = 0; // default
+    SYN_o = 0; // default
+    unique case (1'b1)
+      state[CLOSED_BIT] : begin
+        if              (a_opn) begin
+                                                       nextstate = SYN_SENT;
+                                                       SYN_o = 1;
+        end
+        else if                (p_opn)                 nextstate = LISTEN;
+        else                                           nextstate = CLOSED;
+      end
+      state[CLOSE_WAIT_BIT]: begin
+        if                     (cls) begin
+                                                       nextstate = LAST_ACK;
+                                                       FIN_o = 1;
+        end
+      end
+      state[CLOSING_BIT]: if   (ACK_i)                 nextstate = TIME_WAIT;
+      state[ESTABLISHED_BIT]: begin
+        unique if              (cls) begin
+                                                       nextstate = FIN_WAIT_1;
+                                                       FIN_o = 1;
+        end
+        else if                (FIN_i) begin
+                                                       nextstate = CLOSE_WAIT;
+                                                       ACK_o = 1;
+        end
+        else if                (RST_i)                 nextstate = LISTEN;
+        else if                (ACK_i)                 nextstate = ESTABLISHED;
+      end
+      state[FIN_WAIT_1_BIT]: begin
+        if                     (FIN_i && ACK_i) begin
+                                                       nextstate = TIME_WAIT;
+                                                       ACK_o = 1;
+        end
+        else if                (FIN_i) begin
+                                                       nextstate = CLOSING;
+                                                       ACK_o = 1;
+        end
+        else if                (ACK_i)                 nextstate = FIN_WAIT_2;
+      end
+      state[FIN_WAIT_2_BIT]: begin
+        if                     (FIN_i) begin
+                                                       nextstate = TIME_WAIT;
+                                                       ACK_o = 1;
+        end
+      end
+      state[LAST_ACK_BIT]: if  (ACK_i || timo_strb)    nextstate = CLOSED;
+      state[LISTEN_BIT] : begin
+        unique if              (cls)                   nextstate = CLOSED;
+        else if                (send_data) begin
+                                                       nextstate = SYN_SENT;
+                                                       SYN_o = 1;
+        end
+        else if                (SYN_i) begin
+                                                       nextstate = SYN_RCVD;
+                                                       SYN_o = 1;
+                                                       ACK_o = 1;
+        end
+      end
+      state[SYN_RCVD_BIT]: begin
+        unique if              (cls) begin
+                                                       nextstate = FIN_WAIT_1;
+                                                       FIN_o = 1;
+        end
+        else if                (timo_strb) begin
+                                                       nextstate = CLOSED;
+                                                       RST_o = 1;
+        end
+        else if                (ACK_i)                 nextstate = ESTABLISHED;
+        else if                (RST_i)                 nextstate = LISTEN;
+      end
+      state[SYN_SENT_BIT]: begin
+        if                     (cls || timo_strb)      nextstate = CLOSED;
+        else if                (SYN_i && ACK_i) begin
+                                                       nextstate = ESTABLISHED;
+                                                       ACK_o = 1;
+        end
+        else if                (SYN_i) begin
+                                                       nextstate = SYN_RCVD;
+                                                       ACK_o = 1;
+                                                       SYN_o = 1;
+        end
+      end
+      state[TIME_WAIT_BIT]: if (timo_strb)             nextstate = CLOSED;
     endcase
   end
-
-  // Assign reg'd outputs to state bits
-  assign ACK_o = state[0];
-  assign FIN_o = state[1];
-  assign RST_o = state[2];
-  assign SYN_o = state[3];
 
   // sequential always block
   always_ff @(posedge clk or negedge rst_n) begin

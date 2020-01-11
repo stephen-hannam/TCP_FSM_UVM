@@ -1,4 +1,4 @@
-## File last modified by Fizzim: 7:48:41 pm on 11/1/20
+## File last modified by Fizzim: 6:32:56 am on 12/1/20
 <version>
    14.02.26
 </version>
@@ -921,7 +921,7 @@
             </status>
          </vis>
          <type>
-         reg
+         comb
             <status>
             GLOBAL_VAR
             </status>
@@ -977,7 +977,7 @@
             </status>
          </vis>
          <type>
-         reg
+         comb
             <status>
             GLOBAL_VAR
             </status>
@@ -1033,7 +1033,7 @@
             </status>
          </vis>
          <type>
-         reg
+         comb
             <status>
             GLOBAL_VAR
             </status>
@@ -1089,7 +1089,7 @@
             </status>
          </vis>
          <type>
-         reg
+         comb
             <status>
             GLOBAL_VAR
             </status>
@@ -9266,7 +9266,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         1
+         2
             <status>
             LOCAL
             </status>
@@ -16774,9 +16774,9 @@ fizzgen -terse -nowarn P -language SystemVerilog TCP_FSM.fzm > TCP_FSM.sv
             GLOBAL_FIXED
             </status>
          <value>
-         1000
+         1
             <status>
-            GLOBAL_VAR
+            LOCAL
             </status>
          </value>
          <vis>
