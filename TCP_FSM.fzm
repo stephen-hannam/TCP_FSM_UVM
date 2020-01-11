@@ -1,4 +1,4 @@
-## File last modified by Fizzim: 7:40:28 pm on 11/1/20
+## File last modified by Fizzim: 7:48:41 pm on 11/1/20
 <version>
    14.02.26
 </version>
@@ -904,68 +904,12 @@
       </RST_i>
    </inputs>
    <outputs>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         flag
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         suppress_portlist
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         -1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1021,7 +965,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1077,7 +1021,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1133,7 +1077,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1242,68 +1186,12 @@
          -1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         -1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1359,7 +1247,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1415,7 +1303,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -1471,7 +1359,7 @@
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2034,68 +1922,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2151,7 +1983,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2207,7 +2039,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2263,7 +2095,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2397,68 +2229,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2514,7 +2290,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2570,7 +2346,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2626,7 +2402,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2760,68 +2536,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2877,7 +2597,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2933,7 +2653,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -2989,7 +2709,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3123,68 +2843,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3240,7 +2904,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3296,7 +2960,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3352,7 +3016,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3486,68 +3150,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3603,7 +3211,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3659,7 +3267,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3715,7 +3323,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3849,68 +3457,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -3966,7 +3518,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4022,7 +3574,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4078,7 +3630,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4212,68 +3764,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4329,7 +3825,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4385,7 +3881,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4441,7 +3937,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4575,68 +4071,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4692,7 +4132,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4748,7 +4188,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4804,7 +4244,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -4938,68 +4378,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5055,7 +4439,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5111,7 +4495,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5167,7 +4551,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5301,68 +4685,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5418,7 +4746,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5474,7 +4802,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5530,7 +4858,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5664,68 +4992,12 @@ fzm_globalTable
          1
          </page>
       </name>
-      <mode>
-            <status>
-            GLOBAL_FIXED
-            </status>
-         <value>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </value>
-         <vis>
-         2
-            <status>
-            GLOBAL_VAR
-            </status>
-         </vis>
-         <type>
-         output
-            <status>
-            GLOBAL_VAR
-            </status>
-         </type>
-         <comment>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </comment>
-         <color>
-         -16777216
-            <status>
-            GLOBAL_VAR
-            </status>
-         </color>
-         <useratts>
-         
-            <status>
-            GLOBAL_VAR
-            </status>
-         </useratts>
-         <resetval>
-         0
-            <status>
-            GLOBAL_VAR
-            </status>
-         </resetval>
-         <x2Obj>
-         0
-         </x2Obj>
-         <y2Obj>
-         0
-         </y2Obj>
-         <page>
-         1
-         </page>
-      </mode>
       <SYN_o>
             <status>
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5781,7 +5053,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5837,7 +5109,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -5893,7 +5165,7 @@ fzm_globalTable
             GLOBAL_FIXED
             </status>
          <value>
-         
+         0
             <status>
             GLOBAL_VAR
             </status>
@@ -8340,7 +7612,7 @@ fzm_globalTable
             ABS
             </status>
          <value>
-         ACK
+         ACK_i
             <status>
             LOCAL
             </status>
@@ -17123,12 +16395,12 @@ fzm_globalTable
 </transition>
 ## END STATE TRANSITION OBJECT
 <textObj>
-fizzgen -terse -nowarn P TCP_FSM.fzm TCP_FSM.sv
+fizzgen -terse -nowarn P -language SystemVerilog TCP_FSM.fzm > TCP_FSM.sv
    <x>
-   148
+   311
    </x>
    <y>
-   183
+   18
    </y>
    <page>
    1
