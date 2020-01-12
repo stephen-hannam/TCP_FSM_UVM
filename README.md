@@ -6,7 +6,7 @@ UVM and Systemverilog self-study goal-oriented project. The chosen goal will be 
 
 Use fizzim to construct the various FSMs for phases of TCP connections, and then verify them using UVM (during the course of which synth'able and non-synth'able Systemverilog constructs will also be covered).
 
-UVM will be expedited by Easier-UVM from [Doulos](https://www.doulos.com/knowhow/sysverilog/uvm/).
+UVM will be expedited by Easier-UVM from [Doulos](https://www.doulos.com/knowhow/sysverilog/uvm/) and initially via Getting Started videos found in a playlist maintained by John Aynsley [here](https://www.youtube.com/watch?v=qLr8ayWM_Ww&list=PLBIILfL2t1lnvzw7vF0arlvu36Wj4--D7&index=2&spfreload=10).
 
 ### Setup
 
