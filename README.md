@@ -8,6 +8,18 @@ Use fizzim to construct the various FSMs for phases of TCP connections, and then
 
 UVM will be expedited by Easier-UVM from [Doulos](https://www.doulos.com/knowhow/sysverilog/uvm/).
 
+### Setup
+
+Download uvm-1.2 ('Class Library Code') from [here](https://accellera.org/downloads/standards/uvm) and follow install instructions given [here](https://www.chipverify.com/uvm/uvm-installation).
+
+If the second link is dead, just untar the download somewhere convenient, and create an environment variable in your terminal pointing to it; eg, called `$UVM_HOME`.
+
+Having brought in a local copy of the BCL (Base Class Library) code, use a compiler directive (typically `-incdir $UVM_HOME`) in your synth tools config or command line call, and ensure correct use of include and import statements in your projects source code.
+
+### NB: ModelSim
+
+If using UVM with ModelSim there are some small adjustments needed in the code, see [here for exposition](https://eda-playground.readthedocs.io/en/latest/modelsim-uvm.html).
+
 ### External Resources
 
 Various images in the repo were pulled from online.
